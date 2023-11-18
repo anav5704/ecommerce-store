@@ -13,17 +13,21 @@ export const metadata: Metadata = {
   description: 'E-commerce store managaed by the ecommerce admin cms',
 }
 
-export default function RootLayout({
-  children,
+
+export default async function RootLayout({
+    children,
 }: {
-  children: React.ReactNode
+    children: React.ReactNode
 }) {
+    const response = await fetch(process.env.NEXT_PUBLIC_API_URL!)
+    const { name } = await response.json()
+
   return (
     <html lang="en">
       <body className={font.className}>
         <ModalProvider />
         <ToastProvider />
-        <Navbar />
+        <Navbar name={name}/>
         {children}
         <Footer />
     </body>

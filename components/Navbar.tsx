@@ -6,7 +6,11 @@ import Link from "next/link"
 
 export const revalidate = 0
 
-export const Navbar = async () => {
+interface NavbarProps {
+    name: string
+}
+
+export const Navbar = async ({name}: NavbarProps) => {
     const categories = await getCategories()
 
   return (
@@ -14,7 +18,7 @@ export const Navbar = async () => {
         <Container>
             <div className="relative px-4 sm:px-6 lg:px-8 flex h-16 items-center">
                 <Link href="/" className="ml-4 flex lg:ml-0 gap-x-2">
-                    <p className="font-bold text-xl">My Store</p>
+                    <p className="font-bold text-xl">{name}</p>
                 </Link>
                 <NavLinks data={categories}/>
                 <NavActions />

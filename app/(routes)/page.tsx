@@ -6,9 +6,10 @@ import getProducts from "@/acctions/getProducts"
 
 export const revalidate = 0
 
-
 const HomePage = async () => {
     const products = await getProducts({ isFeatured: true })
+
+                                          // Pass ID 👇 to get billboard of choice
     const billboard = await getBillboard("0642ebd6-973e-4d34-8a56-651730754b12")
 
   return (

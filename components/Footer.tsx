@@ -3,9 +3,14 @@ export const Footer = () => {
     const year = date.getFullYear()
 
   return (
-    <nav className="bg-white border-t">
+    <nav className="bg-white border-t mt-14">
         <div className="mx-auto py-5">
-            <p className="text-center text-black">&copy; {year} E-commerce Store, All rights reserved</p>
+            <div className="text-black flex items-center justify-center flex-col md:flex-row text-center">
+                <p>Developed and maintained by</p>
+                <div>
+                    <a className="font-semibold underline" href="https://github.com/anav5704">Anav</a> @ <a className="font-semibold underline" href="https://procyon.website/">Procyon</a>
+                </div>
+            </div>
         </div>  
     </nav>
   )
