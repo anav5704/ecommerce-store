@@ -4,12 +4,18 @@ import { Currentcy } from "@/components/ui/Currentcy"
 import Button from "@/components/ui/Button"
 import { ShoppingCart } from "lucide-react"
 import { Product } from "@/types"
+import useCart from "@/hooks/useCart"
 
 interface InfoProps {
     data: Product
 }
 
 export const Info = ({ data }: InfoProps) => {
+    const cart = useCart()
+    const onAddToCard = () => {
+        cart.addItem(data)
+    }
+
   return (
     <div className="">
         <h1 className="font-bold text-3xl text-gray-900 ">{data.name}</h1>
@@ -30,7 +36,7 @@ export const Info = ({ data }: InfoProps) => {
             </div>
         </div>
         <div className="mt-10 flex items-center gap-x-3">
-            <Button className="flex itmes-center gap-x-2 rounded-full">
+            <Button onClick={onAddToCard} className="flex itmes-center gap-x-2 rounded-full">
                 Add to Cart
                 <ShoppingCart  className=""/>
             </Button>
