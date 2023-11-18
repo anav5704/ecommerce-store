@@ -1,7 +1,7 @@
 "use client"
 
 import { Currentcy } from "@/components/ui/Currentcy"
-import { Button } from "@/components/ui/Button"
+import Button from "@/components/ui/Button"
 import { ShoppingCart } from "lucide-react"
 import { Product } from "@/types"
 

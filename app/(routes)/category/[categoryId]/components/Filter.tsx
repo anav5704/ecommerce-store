@@ -1,7 +1,7 @@
 "use client"
 
 import { useSearchParams } from "next/navigation"
-import { Button } from "@/components/ui/Button"
+import Button from "@/components/ui/Button"
 import { useRouter } from "next/navigation"
 import { Color, Size } from "@/types"
 import { cn } from "@/lib/utils"

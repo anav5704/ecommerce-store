@@ -1,6 +1,6 @@
 "use client"
 
-import { Button } from '@/components/ui/Button'
+import Button from '@/components/ui/Button'
 import { useRouter } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import { ShoppingBag } from 'lucide-react'

@@ -2,7 +2,7 @@
 
 import { Currentcy } from "@/components/ui/Currentcy";
 import { useSearchParams } from "next/navigation";
-import { Button } from "@/components/ui/Button";
+import Button from "@/components/ui/Button";
 import { toast } from "react-hot-toast";
 import { useEffect } from "react";
 import useCart from "@/hooks/useCart";
