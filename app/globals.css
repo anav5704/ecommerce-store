@@ -6,23 +6,7 @@ html, body, :root {
     height: 100%;
 }
 
-/* width */
-::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #bfbfbf;
-    border-radius:2px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #8f8f8f;
+/* Don't have to worry about dark mode for athe scroll bar if you don't have one 😎 */
+::-webkit-scrollbar, ::-webkit-scrollbar-track, ::-webkit-scrollbar-thumb {
+    display: none;
   }
