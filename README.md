@@ -9,6 +9,7 @@ This is a simple [e-commerce store](https://bit-bazar.vercel.app/) that is fully
 - TailwindCSS
 - Headless UI
 - Stripe
+- Zustand
 
 ##  Getting Started
 First fork and clone the repo. then set up your environmental variables. Make a ```.env``` file in the root of your project with the following variable(You will have to get this from the settings page in your respective store on the admin website):
