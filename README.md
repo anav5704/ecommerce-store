@@ -22,7 +22,7 @@ const billboard = await getBillboard("0642ebd6-973e-4d34-8a56-651730754b12")
 ```
 Once that is done, run ```npm run dev``` to view the store on localhost.
 
-## Larning Resources
+## Learning Resources
 
 - [Fullstack E-commerce + dashboard and CMS](https://www.youtube.com/watch?v=5miHyP6lExg)
 - [Headless UI docs](https://headlessui.com/)
