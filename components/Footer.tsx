@@ -8,7 +8,7 @@ export const Footer = () => {
             <div className="text-black flex items-center justify-center flex-col md:flex-row text-center">
                 <p>Developed and maintained by</p>
                 <div>
-                    <a className="font-semibold underline" href="https://github.com/anav5704">Anav</a> @ <a className="font-semibold underline" href="https://procyon.website/">Procyon</a>
+                    <a className="font-semibold underline" href="https://github.com/anav5704">Anav</a>
                 </div>
             </div>
         </div>  
